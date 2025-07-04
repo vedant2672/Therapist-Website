@@ -2,25 +2,62 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #2c3e50;
+  --primary: #6c63ff;
+  --primary-light: #8b85ff;
+  --primary-dark: #5a52d5;
+  --secondary: #a8a4ff;
+  --accent: #f8f9ff;
+  --text-muted: #6b7280;
+  --border: #e5e7eb;
+  --success: #10b981;
+  --warning: #f59e0b;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Default Font Settings - These complement the font variables set by Next.js font system */
+:root {
+  /* These fallbacks are used when Next.js font variables aren't available */
+  --font-inter-fallback: system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  --font-lora-fallback: Georgia, "Times New Roman", Times, serif;
+  --font-playfair-fallback: Georgia, "Times New Roman", Times, serif;
+  --font-libre-franklin-fallback: system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter);
+  line-height: 1.6;
+}
+
+/* Font utilities */
+.font-inter {
+  font-family: var(--font-inter), var(--font-inter-fallback);
+}
+
+.font-lora {
+  font-family: var(--font-lora), var(--font-lora-fallback);
+}
+
+.font-playfair {
+  font-family: var(--font-playfair), var(--font-playfair-fallback);
+}
+
+.font-libre-franklin {
+  font-family: var(--font-libre-franklin), var(--font-libre-franklin-fallback);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+*:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
 }
