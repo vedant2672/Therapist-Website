@@ -73,7 +73,8 @@ const Hero = () => {
           <div className="mb-16 flex justify-center">
             <a
               href="#contact"
-              className="inline-flex items-center justify-center bg-teal-500/90 text-white font-light font-inter text-base tracking-wider rounded-full w-[430px] h-[60px] max-w-[80%] transition-all duration-300 hover:opacity-90"
+              className="inline-flex items-center justify-center bg-teal-500/90 text-white font-light font-inter text-base tracking-wider rounded-full w-[380px] h-[120px] max-w-[80%] transition-all duration-300 hover:opacity-90"
+              style={{ borderRadius: "50%" }}
             >
               SCHEDULE A CONSULTATION
             </a>

@@ -32,17 +32,18 @@ const Footer = () => {
         </h2>
         <div style={{ marginBottom: "1.2rem" }}>
           <a
+            className="font-libre-franklin"
             href="mailto:jennifer@drjenniferhahm.com"
             style={{
               color: "#222",
               textDecoration: "underline",
-              fontSize: "1.1rem",
+              fontSize: "1rem",
             }}
           >
             serena@blakepsychology.com
           </a>
         </div>
-        <div style={{ marginBottom: "1.2rem", fontSize: "1.2rem" }}>
+        <div style={{ marginBottom: "1.2rem", fontSize: "1rem" }}>
           Phone:{" "}
           <a
             href="#"
@@ -59,16 +60,18 @@ const Footer = () => {
           Fax: (248) 939-8190
         </div>
         <div
+          className="font-libre-franklin"
           style={{
             marginBottom: "1.2rem",
-            fontSize: "1.1rem",
-            fontFamily: "Montserrat, sans-serif",
-            fontWeight: 100,
+            fontSize: "1rem",
           }}
         >
           28175 Haggerty Rd, Novi, MI 48377
         </div>
-        <div style={{ marginBottom: "2.5rem", fontSize: "1rem" }}>
+        <div
+          className="font-libre-franklin"
+          style={{ marginBottom: "2.5rem", fontSize: "0.9rem" }}
+        >
           <a
             href="#"
             style={{
@@ -95,18 +98,22 @@ const Footer = () => {
         </div>
         <div style={{ margin: "3.5rem 0 2.5rem 0" }}>
           <a
+            className="font-libre-franklin text-teal-500"
             href="#"
             style={{
               textDecoration: "underline",
               color: "#222",
-              fontSize: "1.2rem",
+              fontSize: "1rem",
             }}
           >
             Client Portal
           </a>
         </div>
-        <div style={{ fontSize: "1.1rem", color: "#444", marginTop: "3rem" }}>
-          &copy; Dr. Serena Blake, PsyD , PLLC. All rights reserved.
+        <div
+          className="font-libre-franklin"
+          style={{ fontSize: "0.9rem", color: "#444", marginTop: "3rem" }}
+        >
+          &copy; 2025 Dr. Serena Blake, PsyD , PLLC. All rights reserved.
         </div>
       </div>
       <br />

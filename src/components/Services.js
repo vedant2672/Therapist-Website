@@ -25,9 +25,7 @@ const Services = () => {
   return (
     <section id="services" className="py-20 lg:py-32 bg-bg-cream">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
-        <h2
-          className="text-3xl md:text-4xl lg:text-4xl text-stone-600 font-playfair text-center leading-normal font-thin"
-        >
+        <h2 className="text-3xl md:text-4xl lg:text-4xl text-stone-600 font-playfair text-center leading-normal font-thin">
           Therapy can be a space where you invest in yourself—
           <br className="hidden md:block" />
           one of the highest forms of self-care.
@@ -44,7 +42,7 @@ const Services = () => {
           </p>
         </div>
       </div>
-      <hr className="mt-8 mb-48 ml-8 mr-8"></hr>
+      <hr className="mt-8 border-1 border-gray-800 ml-16 mr-16 mb-20" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
@@ -60,7 +58,7 @@ const Services = () => {
             <div key={index} className="text-center ">
               {/* Circular Image */}
               <div className="mb-8">
-                <div className="w-64 h-64 mx-auto rounded-full overflow-hidden">
+                <div className="w-80 h-80 mx-auto rounded-full overflow-hidden">
                   {index === 0 ? (
                     <Image
                       src="/healthcare.png"
