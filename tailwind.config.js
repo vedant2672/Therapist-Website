@@ -1,0 +1,73 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          DEFAULT: "#6c63ff",
+          light: "#8b85ff",
+          dark: "#5a52d5",
+        },
+        secondary: "#a8a4ff",
+        accent: "#f8f9ff",
+        "text-muted": "#6b7280",
+        border: "#e5e7eb",
+        success: "#10b981",
+        warning: "#f59e0b",
+        "green-800": "#2F4A3B",
+        "bg-cream": "#F3F0E8",
+        "teal-500": "rgba(144, 170, 164, 1)",
+      },
+      fontFamily: {
+        inter: [
+          "var(--font-inter)",
+          "system-ui",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "Roboto",
+          "Oxygen",
+          "Ubuntu",
+          "Cantarell",
+          "Open Sans",
+          "Helvetica Neue",
+          "sans-serif",
+        ],
+        lora: [
+          "var(--font-lora)",
+          "Georgia",
+          "Times New Roman",
+          "Times",
+          "serif",
+        ],
+        playfair: [
+          "var(--font-playfair)",
+          "Georgia",
+          "Times New Roman",
+          "Times",
+          "serif",
+        ],
+        "libre-franklin": [
+          "var(--font-libre-franklin)",
+          "system-ui",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "Roboto",
+          "Oxygen",
+          "Ubuntu",
+          "Cantarell",
+          "Open Sans",
+          "Helvetica Neue",
+          "sans-serif",
+        ],
+      },
+    },
+  },
+  plugins: [],
+};

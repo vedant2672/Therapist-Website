@@ -23,11 +23,10 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 lg:py-32 bg-[#F3F0E8]">
+    <section id="services" className="py-20 lg:py-32 bg-bg-cream">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
         <h2
-          className="text-3xl md:text-4xl lg:text-4xl text-stone-600 font-playfair text-center leading-normal"
-          style={{ fontWeight: "100" }}
+          className="text-3xl md:text-4xl lg:text-4xl text-stone-600 font-playfair text-center leading-normal font-thin"
         >
           Therapy can be a space where you invest in yourself—
           <br className="hidden md:block" />

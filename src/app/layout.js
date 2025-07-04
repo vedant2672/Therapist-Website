@@ -38,22 +38,11 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${inter.variable} ${lora.variable} ${playfair.variable} ${libreFranklin.variable}`}
     >
-      <head>
-        {/* Google Fonts are already being loaded via next/font/google, which is the recommended approach for Next.js */}
-
-        {/* If you need Adobe Fonts/Typekit for freight-sans-pro */}
-        <link
-          rel="stylesheet"
-          href="https://use.typekit.net/581004e67e0187b33dc82bc7dac41c70ea725c90 
-
-.css"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body className="antialiased">{children}</body>
+      <body
+        className={`antialiased ${inter.variable} ${lora.variable} ${playfair.variable} ${libreFranklin.variable}`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

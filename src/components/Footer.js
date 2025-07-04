@@ -45,20 +45,27 @@ const Footer = () => {
         <div style={{ marginBottom: "1.2rem", fontSize: "1.2rem" }}>
           Phone:{" "}
           <a
-            href="tel:2489398150"
+            href="#"
             style={{
               textDecoration: "underline",
               color: "#222",
               fontFamily: "Montserrat, sans-serif",
               fontStyle: "normal",
-              fontWeight: 300,
+              fontWeight: 100,
             }}
           >
             (323) 555-0192
           </a>{" "}
           Fax: (248) 939-8190
         </div>
-        <div style={{ marginBottom: "1.2rem", fontSize: "1.1rem" }}>
+        <div
+          style={{
+            marginBottom: "1.2rem",
+            fontSize: "1.1rem",
+            fontFamily: "Montserrat, sans-serif",
+            fontWeight: 100,
+          }}
+        >
           28175 Haggerty Rd, Novi, MI 48377
         </div>
         <div style={{ marginBottom: "2.5rem", fontSize: "1rem" }}>

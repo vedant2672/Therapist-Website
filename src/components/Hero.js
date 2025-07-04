@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <div className=" bg-[#F3F0E8]">
+    <div className="bg-bg-cream">
       <header className="py-6 lg:py-8 ml-8  mb-4 mr-20 ">
         <div className="px-4 sm:px-6 lg:px-8 ">
           <div className="flex items-center">
@@ -12,22 +12,10 @@ const Hero = () => {
               />
 
               <div>
-                <h1
-                  className="text-xl font-medium leading-none"
-                  style={{
-                    color: "#2F4A3B",
-                    fontFamily: "'Playfair Display', serif",
-                  }}
-                >
+                <h1 className="text-xl font-medium leading-none text-green-800 font-playfair">
                   Dr. Serena Blake
                 </h1>
-                <p
-                  className="text-xl font-light leading-none"
-                  style={{
-                    color: "#2F4A3B",
-                    fontFamily: "'Playfair Display', serif",
-                  }}
-                >
+                <p className="text-xl font-light leading-none text-green-800 font-playfair">
                   Psychological Services
                 </p>
               </div>
@@ -68,7 +56,8 @@ const Hero = () => {
         />
         {/* Overlay for better text readability */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/30" />
-        /* Content */
+
+        {/* Content */}
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-light text-white font-lora leading-tight mb-8">
             Psychological Care for Change, Insight, and Well-Being
@@ -84,17 +73,7 @@ const Hero = () => {
           <div className="mb-16 flex justify-center">
             <a
               href="#contact"
-              className="inline-flex items-center justify-center text-white font-light transition-all duration-300 hover:opacity-90"
-              style={{
-                backgroundColor: "rgba(144, 170, 164, 0.9)",
-                fontFamily: "freight-sans-pro",
-                fontSize: "16px",
-                letterSpacing: "1px",
-                borderRadius: "9999px",
-                width: "430px",
-                height: "60px",
-                maxWidth: "80%",
-              }}
+              className="inline-flex items-center justify-center bg-teal-500/90 text-white font-light font-inter text-base tracking-wider rounded-full w-[430px] h-[60px] max-w-[80%] transition-all duration-300 hover:opacity-90"
             >
               SCHEDULE A CONSULTATION
             </a>
