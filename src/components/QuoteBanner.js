@@ -2,69 +2,52 @@ import React from "react";
 
 const QuoteBanner = () => (
   <div
-    className="w-full  flex items-center justify-center"
-    style={{ minHeight: "400px", padding: 0 }}
+    className="w-full flex items-center justify-center px-4"
+    style={{ minHeight: "300px", padding: 0 }}
   >
     <div
+      className="relative w-full flex items-center justify-center"
       style={{
-        position: "relative",
-        width: "100%",
-        height: "400px",
+        height: "300px",
         backgroundImage: "url('/sky.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
+        minHeight: "250px",
       }}
     >
       <div
+        className="w-full text-center relative z-10 px-4 sm:px-8"
         style={{
-          width: "100%",
-          textAlign: "center",
           color: "#222",
-          position: "relative",
-          zIndex: 2,
         }}
       >
         <span
+          className="block mb-4 sm:mb-8 text-lg sm:text-xl md:text-2xl lg:text-3xl leading-tight"
           style={{
             fontFamily: "Playfair Display, serif",
-            fontSize: "1.75rem",
             color: "#222",
             fontWeight: 400,
-            display: "block",
-            marginBottom: "2rem",
           }}
         >
-          “I have come to believe that caring for myself is not self-indulgent.
-          <br />
-          Caring for myself is an act of survival.”
+          "I have come to believe that caring for myself is not self-indulgent.
+          <br className="hidden sm:block" />
+          <span className="block sm:inline">
+            {" "}
+            Caring for myself is an act of survival."
+          </span>
         </span>
         <span
+          className="block mt-4 sm:mt-8 text-base sm:text-lg md:text-xl"
           style={{
             fontFamily: "Libre Franklin, sans-serif",
-            fontSize: "1.2rem",
             color: "#555",
             fontWeight: 100,
-            display: "block",
-            marginTop: "2rem",
           }}
         >
           — Audre Lorde
         </span>
       </div>
-      <div
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          background: "rgba(255,255,255,0.0)",
-          zIndex: 1,
-        }}
-      />
+      <div className="absolute inset-0 bg-white/0 z-0" />
     </div>
   </div>
 );

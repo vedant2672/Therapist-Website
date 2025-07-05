@@ -10,113 +10,62 @@ const Footer = () => {
         padding: "0 0 0 0",
       }}
     >
-      <hr className=" border-1 border-gray-800 ml-16 mr-16" />
-      <div
-        style={{
-          maxWidth: 800,
-          margin: "0 auto",
-          padding: "2.5rem 1rem 0 1rem",
-          textAlign: "center",
-        }}
-      >
+      <hr className="border-1 border-gray-800 mx-4 sm:mx-8 lg:mx-16" />
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 text-center">
         <h2
+          className="text-xl sm:text-2xl lg:text-3xl font-light mb-6 text-gray-700"
           style={{
             fontFamily: "Playfair Display, serif",
-            fontSize: "2rem",
             fontWeight: 100,
-            marginBottom: "1.5rem",
-            color: "#444",
           }}
         >
           Dr. Serena Blake, PsyD (Clinical Psychologist)
         </h2>
-        <div style={{ marginBottom: "1.2rem" }}>
+        <div className="mb-4 sm:mb-6">
           <a
-            className="font-libre-franklin"
-            href="mailto:jennifer@drjenniferhahm.com"
-            style={{
-              color: "#222",
-              textDecoration: "underline",
-              fontSize: "1rem",
-            }}
+            className="font-libre-franklin text-gray-800 underline text-sm sm:text-base"
+            href="mailto:serena@blakepsychology.com"
           >
             serena@blakepsychology.com
           </a>
         </div>
-        <div style={{ marginBottom: "1.2rem", fontSize: "1rem" }}>
+        <div className="mb-4 sm:mb-6 text-sm sm:text-base">
           Phone:{" "}
           <a
-            href="#"
-            style={{
-              textDecoration: "underline",
-              color: "#222",
-              fontFamily: "Montserrat, sans-serif",
-              fontStyle: "normal",
-              fontWeight: 100,
-            }}
+            href="tel:+13235550192"
+            className="underline text-gray-800 font-libre-franklin"
           >
             (323) 555-0192
           </a>{" "}
-          Fax: (248) 939-8190
+          <span className="block sm:inline">Fax: (248) 939-8190</span>
         </div>
-        <div
-          className="font-libre-franklin"
-          style={{
-            marginBottom: "1.2rem",
-            fontSize: "1rem",
-          }}
-        >
+        <div className="font-libre-franklin mb-4 sm:mb-6 text-sm sm:text-base text-gray-700">
           28175 Haggerty Rd, Novi, MI 48377
         </div>
-        <div
-          className="font-libre-franklin"
-          style={{ marginBottom: "2.5rem", fontSize: "0.9rem" }}
-        >
-          <a
-            href="#"
-            style={{
-              textDecoration: "underline",
-              color: "#222",
-              marginRight: 12,
-            }}
-          >
+        <div className="font-libre-franklin mb-8 sm:mb-10 text-xs sm:text-sm flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-4">
+          <a href="#" className="underline text-gray-800">
             Home
           </a>
-          <a
-            href="#"
-            style={{
-              textDecoration: "underline",
-              color: "#222",
-              marginRight: 12,
-            }}
-          >
+          <a href="#" className="underline text-gray-800">
             Privacy Policy
           </a>
-          <a href="#" style={{ textDecoration: "underline", color: "#222" }}>
+          <a href="#" className="underline text-gray-800">
             Good Faith Estimate
           </a>
         </div>
-        <div style={{ margin: "3.5rem 0 2.5rem 0" }}>
+        <div className="my-8 sm:my-12">
           <a
-            className="font-libre-franklin text-teal-500"
+            className="font-libre-franklin text-teal-500 underline text-sm sm:text-base"
             href="#"
-            style={{
-              textDecoration: "underline",
-              color: "#222",
-              fontSize: "1rem",
-            }}
           >
             Client Portal
           </a>
         </div>
-        <div
-          className="font-libre-franklin"
-          style={{ fontSize: "0.9rem", color: "#444", marginTop: "3rem" }}
-        >
+        <div className="font-libre-franklin text-xs sm:text-sm text-gray-600 mt-8">
           &copy; 2025 Dr. Serena Blake, PsyD , PLLC. All rights reserved.
         </div>
       </div>
-      <br />
+      <br className="block sm:hidden" />
     </footer>
   );
 };

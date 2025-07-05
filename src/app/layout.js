@@ -32,6 +32,11 @@ export const metadata = {
     "Compassionate therapy for anxiety, relationships, and trauma recovery. 8+ years experience. In-person and virtual sessions available.",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export default function RootLayout({ children }) {
   return (
     <html

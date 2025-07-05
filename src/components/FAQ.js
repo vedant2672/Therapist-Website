@@ -64,27 +64,27 @@ const FAQ = () => {
   };
 
   return (
-    <section id="faq" className="py-20 bg-[#f7f4ea]">
-      <div className="max-w-2xl mx-auto px-4">
+    <section id="faq" className="py-12 sm:py-20 bg-[#f7f4ea]">
+      <div className="max-w-2xl mx-auto px-4 sm:px-6">
         <h2
-          className="text-3xl sm:text-4xl font-bold text-center mb-10"
+          className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-10"
           style={{ color: "#20513a", fontFamily: "Playfair Display, serif" }}
         >
           Frequently Asked Questions
         </h2>
-        <div className="space-y-4">
+        <div className="space-y-3 sm:space-y-4">
           {faqs.map((faq, index) => (
             <div
               key={index}
               className="bg-white border border-gray-200 rounded-lg shadow-sm"
             >
               <button
-                className="w-full flex justify-between items-center px-6 py-5 text-left focus:outline-none"
+                className="w-full flex justify-between items-center px-4 sm:px-6 py-4 sm:py-5 text-left focus:outline-none"
                 onClick={() => toggleFAQ(index)}
                 aria-expanded={openFAQ === index}
               >
                 <span
-                  className="font-semibold text-lg"
+                  className="font-semibold text-base sm:text-lg pr-4"
                   style={{
                     color: "#20513a",
                     fontFamily: "Playfair Display, serif",
@@ -123,7 +123,7 @@ const FAQ = () => {
               </button>
               {openFAQ === index && (
                 <div
-                  className="px-6 pb-5 text-gray-700"
+                  className="px-4 sm:px-6 pb-4 sm:pb-5 text-gray-700 text-sm sm:text-base"
                   style={{ fontFamily: "Libre Franklin, sans-serif" }}
                 >
                   {faq.answer}
@@ -133,7 +133,7 @@ const FAQ = () => {
           ))}
         </div>
       </div>
-      <hr className="mt-20 border-1 border-gray-800 ml-16 mr-16" />
+      <hr className="mt-12 sm:mt-20 border-1 border-gray-800 mx-4 sm:mx-8 lg:mx-16" />
     </section>
   );
 };

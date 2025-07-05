@@ -53,13 +53,124 @@ body {
   font-family: var(--font-libre-franklin), var(--font-libre-franklin-fallback);
 }
 
-/* Smooth scrolling */
+/* Responsive utilities */
+@media (max-width: 640px) {
+  /* Mobile-first responsive fixes */
+  .text-responsive {
+    font-size: clamp(0.875rem, 2.5vw, 1rem);
+  }
+
+  .heading-responsive {
+    font-size: clamp(1.25rem, 4vw, 1.5rem);
+  }
+
+  .hero-heading-responsive {
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
+  }
+}
+
+/* Smooth scrolling for anchor links */
 html {
   scroll-behavior: smooth;
+}
+
+/* Ensure images are responsive by default */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Better touch targets for mobile */
+@media (max-width: 768px) {
+  button,
+  a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Prevent horizontal scroll on mobile */
+body {
+  overflow-x: hidden;
+}
+
+/* Improve text readability on mobile */
+@media (max-width: 640px) {
+  p,
+  div {
+    line-height: 1.6;
+  }
 }
 
 /* Focus styles for accessibility */
 *:focus {
   outline: 2px solid var(--primary);
   outline-offset: 2px;
+}
+
+/* Mobile-specific improvements */
+@media (max-width: 640px) {
+  /* Ensure text doesn't get too small on mobile */
+  .text-mobile-lg {
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Better spacing for mobile cards */
+  .mobile-card-spacing {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Mobile-friendly button sizing */
+  .mobile-button {
+    padding: 0.75rem 1.5rem;
+    min-height: 44px;
+    font-size: 0.875rem;
+  }
+
+  /* Improved hero section for mobile */
+  .hero-mobile {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    min-height: 80vh;
+  }
+
+  /* Better mobile typography */
+  h1,
+  h2,
+  h3 {
+    line-height: 1.2;
+  }
+}
+
+/* Tablet and larger screens */
+@media (min-width: 641px) and (max-width: 1024px) {
+  /* Tablet-specific adjustments */
+  .tablet-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large screen optimizations */
+@media (min-width: 1025px) {
+  /* Prevent content from getting too wide on very large screens */
+  .max-content-width {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+/* Focus improvements for accessibility */
+a:focus,
+button:focus {
+  outline: 2px solid #6c63ff;
+  outline-offset: 2px;
+}
+
+/* Better hover states for touch devices */
+@media (hover: hover) {
+  .hover-lift:hover {
+    transform: translateY(-2px);
+    transition: transform 0.2s ease;
+  }
 }

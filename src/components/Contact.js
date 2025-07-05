@@ -55,18 +55,21 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="py-16 flex justify-center bg-[#f7f4ea]">
+    <div
+      id="contact"
+      className="py-8 sm:py-16 flex justify-center bg-[#f7f4ea] px-4"
+    >
       <div
-        className="w-full max-w-md bg-white border border-gray-300 rounded-xl shadow-md p-8"
+        className="w-full max-w-md sm:max-w-lg bg-white border border-gray-300 rounded-xl shadow-md p-6 sm:p-8"
         style={{ fontFamily: "Libre Franklin, sans-serif" }}
       >
         <h2
-          className="text-2xl font-bold text-center mb-2"
+          className="text-xl sm:text-2xl font-bold text-center mb-2"
           style={{ color: "#20513a", fontFamily: "Playfair Display, serif" }}
         >
           Get In Touch
         </h2>
-        <p className="text-center text-gray-700 mb-6 text-base">
+        <p className="text-center text-gray-700 mb-4 sm:mb-6 text-sm sm:text-base px-2">
           Simply fill out the brief fields below and Dr. Blake will be in touch
           with you soon, usually within one business day. This form is safe,
           private, and completely free.

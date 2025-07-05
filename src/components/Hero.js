@@ -1,21 +1,21 @@
 const Hero = () => {
   return (
     <div className="bg-bg-cream">
-      <header className="py-6 lg:py-8 ml-8  mb-4 mr-20 ">
-        <div className="px-4 sm:px-6 lg:px-8 ">
+      <header className="py-4 sm:py-6 lg:py-8 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
           <div className="flex items-center">
-            <div className="flex items-center space-x-4 mt-4">
+            <div className="flex items-center space-x-3 sm:space-x-4">
               <img
                 src="image.png"
                 alt="Dr. Serena Blake Logo"
-                className="w-15 h-15 object-cover rounded-sm"
+                className="w-12 h-12 sm:w-15 sm:h-15 object-cover rounded-sm"
               />
 
               <div>
-                <h1 className="text-xl font-medium leading-none text-green-800 font-playfair">
+                <h1 className="text-lg sm:text-xl font-medium leading-none text-green-800 font-playfair">
                   Dr. Serena Blake
                 </h1>
-                <p className="text-xl font-light leading-none text-green-800 font-playfair">
+                <p className="text-lg sm:text-xl font-light leading-none text-green-800 font-playfair">
                   Psychological Services
                 </p>
               </div>
@@ -25,11 +25,11 @@ const Hero = () => {
       </header>
       <section
         id="home"
-        className="relative min-h-screen flex items-center justify-center ml-16 mt-8 mb-16 mr-16"
+        className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-16 py-8"
       >
         {/* Background Image */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat "
           style={{
             backgroundImage: `url('data:image/svg+xml;base64,${btoa(`
             <svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
@@ -59,21 +59,21 @@ const Hero = () => {
 
         {/* Content */}
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-light text-white font-lora leading-tight mb-8">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light text-white font-lora leading-tight mb-6 sm:mb-8">
             Psychological Care for Change, Insight, and Well-Being
           </h1>
 
-          <p className="text-lg sm:text-xl lg:text-2xl text-white/90 font-light leading-relaxed mb-12 w-full font-lora">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 font-light leading-relaxed mb-8 sm:mb-12 max-w-4xl mx-auto font-lora">
             Offering individual psychotherapy for adults via telehealth in
             Michigan and <span className="underline">most U.S.</span> states
             through PSYPACT participation
           </p>
 
           {/* CTA Button */}
-          <div className="mb-16 flex justify-center">
+          <div className="mb-8 sm:mb-16 flex justify-center">
             <a
               href="#contact"
-              className="inline-flex items-center justify-center bg-teal-500/90 text-white font-light font-inter text-base tracking-wider rounded-full w-[380px] h-[120px] max-w-[80%] transition-all duration-300 hover:opacity-90"
+              className="inline-flex items-center justify-center bg-teal-500/90 text-white font-light font-inter text-sm sm:text-base tracking-wider rounded-full w-full max-w-xs sm:max-w-sm md:w-[380px] h-16 sm:h-20 md:h-[120px] transition-all duration-300 hover:opacity-90 px-4"
               style={{ borderRadius: "50%" }}
             >
               SCHEDULE A CONSULTATION
