@@ -29,7 +29,7 @@ const Rates = () => {
           className="text-sm sm:text-base font-libre-franklin text-stone-900 px-4"
           style={{ fontWeight: 300 }}
         >
-          For out-of-network plans, I've partnered with Mentaya using{" "}
+          For out-of-network plans, I&apos;ve partnered with Mentaya using{" "}
           <a
             href="#"
             target="_blank"

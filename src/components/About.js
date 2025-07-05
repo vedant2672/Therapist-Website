@@ -29,7 +29,7 @@ const About = () => {
               >
                 <p className="font-libre-franklin leading-loose text-base sm:text-lg">
                   Finding time and opportunities to care for ourselves can be
-                  incredibly challenging in today's busy and demanding world. I
+                  incredibly challenging in today&apos;s busy and demanding world. I
                   believe therapy offers a dedicated space for self-care,
                   providing the support and tools needed to improve this
                   essential practice. Therapy can help individuals identify and
@@ -41,7 +41,7 @@ const About = () => {
                   I am dedicated to supporting this journey by offering active
                   listening, psychological knowledge, empathy, compassion, and
                   insights into behavioral patterns and tendencies. I hold a
-                  master's degree in Clinical Psychology from the Michigan
+                  master&apos;s degree in Clinical Psychology from the Michigan
                   School of Psychology (2012) and a Ph.D. in Counseling
                   Psychology from Western Michigan University (2018). My
                   experience spans therapy and psychological assessment in

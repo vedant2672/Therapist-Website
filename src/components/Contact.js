@@ -197,7 +197,7 @@ const Contact = () => {
               </p>
             )}
             <span className="text-xs text-gray-500">
-              Let us know when you're typically available for a call or
+              Let us know when you&apos;re typically available for a call or
               consultation
             </span>
           </div>

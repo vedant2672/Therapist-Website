@@ -29,11 +29,11 @@ const QuoteBanner = () => (
             fontWeight: 400,
           }}
         >
-          "I have come to believe that caring for myself is not self-indulgent.
+          &ldquo;I have come to believe that caring for myself is not self-indulgent.
           <br className="hidden sm:block" />
           <span className="block sm:inline">
             {" "}
-            Caring for myself is an act of survival."
+            Caring for myself is an act of survival.&rdquo;
           </span>
         </span>
         <span
